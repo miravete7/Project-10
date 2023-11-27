@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="quiz-container">
+    <h1>Simple Quiz</h1>
+    <div id="question">
+      <p>What is the capital of France?</p>
+    </div>
+    <div id="options">
+      <div class="option">Paris</div>
+      <div class="option">Berlin</div>
+      <div class="option">Madrid</div>
+      <div class="option">Rome</div>
+    </div>
+    <div id="feedback"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

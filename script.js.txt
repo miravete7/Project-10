@@ -1,0 +1,19 @@
+// script.js
+$(document).ready(function() {
+  let options = $('.option');
+  let feedback = $('#feedback');
+
+  options.click(function() {
+    options.off('click'); // Disable click event on other options
+    options.css('cursor', 'not-allowed'); // Change cursor style
+
+    let selectedOption = $(this).text();
+    let correctAnswer = 'Paris';
+
+    if (selectedOption === correctAnswer) {
+      feedback.text('Correct! Well done.').css('color', 'green');
+    } else {
+      feedback.text('Incorrect. The correct answer is Paris.').css('color', 'red');
+    }
+  });
+});
